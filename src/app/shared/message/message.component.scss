@@ -1,0 +1,32 @@
+:host {
+	.message {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+		padding: 1rem;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0,0,0,.3);
+		&.error {
+			background-color: #e74c3c;
+		}
+		&.success {
+			background-color: #4CAF50;
+		}
+		&.alert {
+			background-color: #FFEB3B;
+		}
+			span {
+				position: absolute;
+				top: 0;
+				right: .5rem;
+				font-size: 1.5rem;
+				cursor: pointer;
+				&::before{
+					content: "\00d7";
+				}
+				&:hover{
+					color: red;
+				}
+			}		
+	}
+}

@@ -1,0 +1,9 @@
+<div class="message success" *ngIf="messageIsOpen">
+	<div class="message-header">
+		<span (click)="close()"></span>	
+		{{ title }}
+	</div>	
+	<div class="message-content">
+		<ng-content select=".content"></ng-content>
+	</div>
+</div>

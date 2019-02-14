@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+html, body{
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	font-size: 14px;
+}
+body{
+	margin: 0;
+	background-color: #ecf0f1;
+}
+*{
+	box-sizing: border-box;
+}
+/*Style form*/
+.form {
+	padding: 1rem;
+	.input-container {
+		margin-bottom: 1rem;		
+	}
+	label {
+		margin-bottom: .1rem;
+		display: block;
+		width: 100%;
+	}
+	input[type = text], select {
+		display: block;
+		width: 100%;
+		padding: .5em;
+		outline: none;
+	}
+}
