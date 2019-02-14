@@ -9,7 +9,7 @@ export class MessageComponent implements OnInit {
 
 	@Input() title: string;
 	@Output() closeMessage = new EventEmitter<any>();
-	messageIsOpen = true;
+	messageIsOpened = true;
 
   constructor() { }
 
@@ -17,8 +17,8 @@ export class MessageComponent implements OnInit {
   }
 
   close() {
-  	this.messageIsOpen = false;
-  	this.closeMessage.emit(this.messageIsOpen); 
+  	this.messageIsOpened = false;
+  	this.closeMessage.emit(this.messageIsOpened); 
   }
 
 }

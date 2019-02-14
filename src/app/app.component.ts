@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   message = 'Angular Academy';
+  isShowedMessage = false;
 
   showMessage() {
+  	this.isShowedMessage = true;
   	console.log("Show message");
   }
 }
